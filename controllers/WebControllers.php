@@ -13,9 +13,10 @@ class WebControllers{
         include "views/listBooks.php";
     }
     public function searchBooks(){
-        $sql_txt = "select * from library where like '%$name%'";
-        $list_books = queryDB($sql_txt);
-        $count =1;
-        include "views/listBooks.php";
+        $name = $_POST['name'];
+        $sql_txt = "select * from library where title like '%$name%'";
+            $list_books = queryDB($sql_txt);
+            $count =1;
+            include "views/listBooks.php";
     }
 }

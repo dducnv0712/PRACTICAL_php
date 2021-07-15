@@ -21,8 +21,8 @@
                 <div class="col-3">
                     <form action="?route=search" method="post">
                         <div class="input-group flex-nowrap">
-                            <input type="text" class="form-control" placeholder="Name Book" aria-label="Name Book" aria-describedby="addon-wrapping">
-                            <button class="input-group-text" id="addon-wrapping">Search</button>
+                            <input type="text" name="name" class="form-control" placeholder="Name Book" aria-label="Name Book" aria-describedby="addon-wrapping">
+                            <button type="submit" class="input-group-text" id="addon-wrapping">Search</button>
 
                         </div>
 
